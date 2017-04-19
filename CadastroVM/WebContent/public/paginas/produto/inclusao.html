@@ -1,0 +1,41 @@
+<h3>Novo produto</h3>
+
+<div class="form-group">
+    <label>Nome</label>
+    <input ng-model="vm.produto.nome"          
+           type="text"
+           class="form-control"
+           required />
+</div>
+
+<div class="form-group">
+    <label>Memória</label>
+    <input ng-model="vm.produto.memoria"
+           type="number"
+           class="form-control"
+           required />
+</div>
+<div class="form-group">
+    <label>Sistema Operacional</label>
+    <input ng-model="vm.produto.sistemaOperacional"
+           type="text"
+           class="form-control"
+           required />
+</div>
+
+<div class="form-group">
+    <label>Quantidade</label>
+    <input ng-model="vm.produto.quantidade"
+           type="number"
+           class="form-control"
+           required />
+</div>
+
+<br />
+<div class="clearfix"></div>
+
+<p class="text-center">
+    <button class="btn btn-primary btn-lg" ng-click="vm.salvar()">
+        Salvar
+    </button>
+</p>
